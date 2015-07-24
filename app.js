@@ -8,7 +8,19 @@ $(document).ready(function(){
 		personAge: 34
 	};
 	
-	ko.applyBindings(myModel);
+	var items = [
+		{firstName: 'michael'},
+		{firstName: 'john'}	
+	];
+	
+	var viewModel = {
+		myModel: myModel, 
+		items: items
+	};
+	
+	ko.applyBindings(viewModel);
+	//ko.applyBindings(myModel);
+	//ko.applyBindings(items);
 	
 });
 
