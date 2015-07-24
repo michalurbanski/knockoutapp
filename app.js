@@ -1,6 +1,6 @@
 "use strict";
 
-function init(){
-	alert('test');	
-};
+$(document).ready(function(){
+	alert('jquery test');
+});
 
